@@ -1,0 +1,9 @@
+tensorflow
+media
+static
+network.h5
+KNN_model.pkl
+tensorflow-2.3.0.dist-info
+db.sqlite3
+.cache
+scaler.pkl

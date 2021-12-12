@@ -1,0 +1,10 @@
+<body style="background-color:black;color:white">
+<div style="padding:40px;margin:40px;border:1px solid #ccc">
+	<h1>Upload your song</h1>
+	<form method="post" enctype="multipart/form-data">
+	  {% csrf_token %}
+	  {{ form.as_p }}
+	  <button type="submit" style="background-color:aqua;color:black;border-radius:10px">Submit</button>
+	</form><hr>
+</div>
+</body>

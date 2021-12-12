@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{%load static%}
+{% block css %}
+rel="stylesheet" href="static/index.css"
+{% endblock css %}
+{% comment %} inheriting the base html {% endcomment %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+{% autoescape off %}
+<br><br>
+<div class="card">
+<div >
+  <img src="static/teena-lalawat-A6IYIZjhM3c-unsplash.jpg" class="card--image" />
+
+  <a class="nav-link" href="/uploader">Genre</a>
+</div>
+</div>
+<br><br><br>
+ <div class="card">
+  <img src="static/2457389.jpg" class="card--image" />
+  
+  <a class="nav-link" href="/uploader2">Composer</a>
+
+</div>
+{% endautoescape %}
+{% endblock body %}
+
+        
+
+
+

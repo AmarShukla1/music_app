@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Genres{% endblock title %}
+{% block css %}
+rel="stylesheet" href="static/index2.css"
+{% endblock css %}
+{% block body %}
+<br><br>
+<div class="card">
+
+    <img src="{{image}}" class="card--image" />
+    This resembles with {{results}}
+  
+  </div>
+  <br><br><br>
+  <p class='title' style='font-size:37px;'>Songs like this genre:</p>
+
+  <br><br>
+  <div class='song' style='color:pink'>
+
+    {% for link in links %}
+  <div>
+    <img src="{{ link.5 }}"/>
+  <pre>  <span>{{ link.0 }}</span>
+  
+         <span>{{ link.1 }}</span>
+  </pre>
+      <a href={{ link.4 }} style="font-size:small">Play this song</a><br><br>
+      
+  </div>    
+    {% endfor %}
+  
+  </div>
+{% endblock body %}

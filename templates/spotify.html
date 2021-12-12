@@ -1,0 +1,19 @@
+<head><link rel="stylesheet" href="static/index5.css"></head>
+<body>
+<div class='song'>
+
+  {% for link in links %}
+<div>
+    <img src="{{ link.5 }}"/>
+<pre>    <span>{{ link.0 }}</span>
+
+    <span>{{ link.1 }}</span>
+</pre>
+    <a href={{link.3}} style="font-size:small">Preview</a>
+    <a href={{ link.4 }} style="font-size:small">Play this song</a><br><br>
+  
+</div>    
+  {% endfor %}
+
+</div>
+</body>
